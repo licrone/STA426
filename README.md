@@ -1,6 +1,7 @@
 ## STA426
 ### Homework week 1 
 **Part a**
+
 Hello, my name is Lisa and I am a biologist. I studied in a city that looks like this:
 
 ![Uppsala](https://www.svenskbyggtidning.se/wp-content/uploads/sites/2/2017/08/magasinering-uppsala-11.jpg)
