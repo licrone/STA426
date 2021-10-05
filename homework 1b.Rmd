@@ -1,0 +1,40 @@
+---
+title: "Homework week 1 part b"
+author: "Lisa Crone"
+date: "10/4/2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+Task: _Create an HTML document that samples 100 values from a log-normal distribution (say, mu=1, sigma=.25); create a histogram of the distribution and the distribution on the log scale; report the mean and variance of the sample in line in the text._
+
+### 1. A lognormal dataset
+
+```{r}
+samples = 100
+mean = 1
+sd = 0.25
+data <- rlnorm(samples,meanlog = mean,sdlog = sd)
+```
+
+### 2. Histogram
+**a)**
+A histogram of dataset "data" with titles
+```{r}
+bins = 15
+
+hist(data, breaks = bins, main = "Histogram of data",xlab = "numbers",ylab = "frequency")
+```
+
+**b)**
+logarithmic histogram
+```{r}
+hist(log(data), breaks = bins, main = "Logarithmic histogram of data",xlab = "numbers",ylab = "frequency")
+```
+
+### 3.Mean and variance
+```{r}
+mean(data)
+var(data)
+```
+The mean of the data set is **`r mean(data)`** and the variance **`r var(data)`** 
